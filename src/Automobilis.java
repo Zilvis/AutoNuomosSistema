@@ -1,3 +1,10 @@
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+@ToString
 public class Automobilis {
     private String marke, modelis;
     private double kainaUzDiena;
@@ -8,47 +15,5 @@ public class Automobilis {
         this.modelis = modelis;
         this.kainaUzDiena = kainaUzDiena;
         this.pagaminimoMetai = pagaminimoMetai;
-    }
-
-    public String getMarke() {
-        return marke;
-    }
-
-    public void setMarke(String marke) {
-        this.marke = marke;
-    }
-
-    public String getModelis() {
-        return modelis;
-    }
-
-    public void setModelis(String modelis) {
-        this.modelis = modelis;
-    }
-
-    public double getKainaUzDiena() {
-        return kainaUzDiena;
-    }
-
-    public void setKainaUzDiena(double kainaUzDiena) {
-        this.kainaUzDiena = kainaUzDiena;
-    }
-
-    public int getPagaminimoMetai() {
-        return pagaminimoMetai;
-    }
-
-    public void setPagaminimoMetai(int pagaminimoMetai) {
-        this.pagaminimoMetai = pagaminimoMetai;
-    }
-
-    @Override
-    public String toString() {
-        return "Automobilis{" +
-                "marke='" + marke + '\'' +
-                ", modelis='" + modelis + '\'' +
-                ", kainaUzDiena=" + kainaUzDiena +
-                ", pagaminimoMetai=" + pagaminimoMetai +
-                '}';
     }
 }
