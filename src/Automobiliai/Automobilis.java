@@ -1,3 +1,5 @@
+package Automobiliai;
+
 public class Automobilis {
     private String marke, modelis;
     private double kainaUzDiena;
@@ -54,7 +56,7 @@ public class Automobilis {
 
     @Override
     public String toString() {
-        return "Automobilis{" +
+        return "Automobiliai.Automobilis{" +
                 "marke='" + marke + '\'' +
                 ", modelis='" + modelis + '\'' +
                 ", kainaUzDiena=" + kainaUzDiena +
