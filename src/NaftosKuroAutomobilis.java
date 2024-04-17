@@ -1,13 +1,22 @@
-import lombok.Getter;
-import lombok.Setter;
 
-@Getter
-@Setter
 public class NaftosKuroAutomobilis extends Automobilis {
     private int kuroSanaudos;
 
-    public NaftosKuroAutomobilis(String marke, String modelis, double kainaUzDiena, int pagaminimoMetai, int kuroSanaudos) {
-        super(marke, modelis, kainaUzDiena, pagaminimoMetai);
+    public NaftosKuroAutomobilis(String marke, String modelis, double kainaUzDiena, int pagaminimoMetai, int kuroSanaudos, int rida) {
+        super(marke, modelis, kainaUzDiena, pagaminimoMetai, rida);
         this.kuroSanaudos = kuroSanaudos;
+    }
+
+    public int getKuroSanaudos() {
+        return kuroSanaudos;
+    }
+
+    public void setKuroSanaudos(int kuroSanaudos) {
+        this.kuroSanaudos = kuroSanaudos;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + " kuroSanaudos=" + kuroSanaudos;
     }
 }

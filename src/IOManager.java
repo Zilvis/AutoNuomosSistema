@@ -4,7 +4,7 @@ public class IOManager {
 
     private Scanner scanner;
     private int tipas;
-    boolean iseitiIsPasirinkimu = true;
+    boolean aktyvus = true;
 
     public IOManager() {
         scanner = new Scanner(System.in);
@@ -13,18 +13,20 @@ public class IOManager {
 
     public void sukurtiAuto () {
 
-        while (iseitiIsPasirinkimu) {
-            System.out.println("Pasirinkite naujo auto tipa 1): Elektromobilis 2): Kuru vaziuojantis ");
+        while (aktyvus) {
+            System.out.println("Naujo auto kurimas: ");
+            System.out.println("Elektromobilis: ");
+            System.out.println("Nafta varomas: ");
             String pasirinkimas = scanner.nextLine();
 
             switch (pasirinkimas) {
                 case "1":
                     setTipas("1");
-                    iseitiIsPasirinkimu = false;
+                    aktyvus = false;
                     break;
                 case "2":
                     setTipas("2");
-                    iseitiIsPasirinkimu = false;
+                    aktyvus = false;
                     break;
                 default:
                     System.out.println("Netinkamas pasirinkimas");
