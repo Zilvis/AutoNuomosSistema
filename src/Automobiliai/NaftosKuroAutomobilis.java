@@ -1,8 +1,9 @@
+package Automobiliai;
 
 public class NaftosKuroAutomobilis extends Automobilis {
     private int kuroSanaudos;
 
-    public NaftosKuroAutomobilis(String marke, String modelis, double kainaUzDiena, int pagaminimoMetai, int kuroSanaudos, int rida) {
+    public NaftosKuroAutomobilis(String marke, String modelis, double kainaUzDiena, int pagaminimoMetai, int rida, int kuroSanaudos) {
         super(marke, modelis, kainaUzDiena, pagaminimoMetai, rida);
         this.kuroSanaudos = kuroSanaudos;
     }

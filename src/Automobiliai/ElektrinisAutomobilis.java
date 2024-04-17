@@ -1,9 +1,9 @@
-
+package Automobiliai;
 
 public class ElektrinisAutomobilis extends Automobilis{
     private int baterijosIkrovosLaikas;
 
-    public ElektrinisAutomobilis(String marke, String modelis, double kainaUzDiena, int pagaminimoMetai, int baterijosIkrovosLaikas, int rida) {
+    public ElektrinisAutomobilis(String marke, String modelis, double kainaUzDiena, int pagaminimoMetai, int rida, int baterijosIkrovosLaikas) {
         super(marke, modelis, kainaUzDiena, pagaminimoMetai, rida);
         this.baterijosIkrovosLaikas = baterijosIkrovosLaikas;
     }
